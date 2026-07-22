@@ -11,7 +11,14 @@ function addResult(label, value) {
 
     row.className = "result-row";
 
-    row.innerHTML = `<span>${label}</span><span>${value}</span>`;
+    const labelSpan = document.createElement("span");
+    const valueSpan = document.createElement("span");
+
+    labelSpan.textContent = label;
+    valueSpan.textContent = value;
+
+    row.appendChild(labelSpan);
+    row.appendChild(valueSpan);
 
     results.appendChild(row);
 

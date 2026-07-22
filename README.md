@@ -1,6 +1,6 @@
 # CyberNexus
 
-A collection of lightweight, browser based cybersecurity tools for developers, students, and security enthusiasts. No frameworks, no build step, no backend  everything runs client-side in vanilla HTML, CSS, and JavaScript, so nothing you type ever leaves your browser.
+A collection of lightweight, browser based cybersecurity tools for developers, students, and security enthusiasts. No frameworks, no build step, no backend everything runs client-side in vanilla HTML, CSS, and JavaScript, so nothing you type ever leaves your browser.
 
 ## Live Demo
 
