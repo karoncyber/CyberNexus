@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IP Address | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="network-tools.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>My IP Address</h2>
+        <p>Find the public IP address of your connection.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <p>Reveal the public IP address your browser is connecting from.</p>
+
+            <button id="lookup-btn">
+                Get My IP
+            </button>
+
+            <p id="ip-warning"></p>
+
+            <input
+                type="text"
+                id="ip-output"
+                class="mono"
+                readonly
+                placeholder="Your IP will appear here"
+            >
+
+            <button id="copy-btn">
+                Copy IP
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/my-ip.js"></script>
+
+</body>
+</html>

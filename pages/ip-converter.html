@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Converter | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="network-tools.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>IP Converter</h2>
+        <p>Convert an IPv4 address to binary, hex, and decimal.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <label for="ip-input">IPv4 Address</label>
+
+            <input
+                type="text"
+                id="ip-input"
+                placeholder="e.g. 192.168.1.10"
+            >
+
+            <button id="convert-btn">
+                Convert
+            </button>
+
+            <p id="ip-warning"></p>
+
+            <div class="result-list" id="ip-results"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/ip-converter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Encoder / Decoder | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="encoding-tools.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>URL Encoder / Decoder</h2>
+        <p>Encode or decode text for use in URLs.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <div class="toggle-group">
+                <button id="encode-btn" class="toggle-btn active">Encode</button>
+                <button id="decode-btn" class="toggle-btn">Decode</button>
+            </div>
+
+            <label for="url-input">Input Text</label>
+
+            <textarea
+                id="url-input"
+                placeholder="Enter text or URL..."
+            ></textarea>
+
+            <label>
+                <input type="checkbox" id="full-uri">
+                Preserve URI Reserved Characters
+            </label>
+
+            <button id="convert-btn">
+                Convert
+            </button>
+
+            <p id="url-warning"></p>
+
+            <textarea
+                id="url-output"
+                class="mono"
+                readonly
+                placeholder="Result will appear here"
+            ></textarea>
+
+            <button id="copy-btn">
+                Copy Result
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/url-encoder.js"></script>
+
+</body>
+</html>

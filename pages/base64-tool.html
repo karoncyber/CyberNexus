@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Tool | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="encoding-tools.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Base64 Tool</h2>
+        <p>Encode or decode text using Base64.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <div class="toggle-group">
+                <button id="encode-btn" class="toggle-btn active">Encode</button>
+                <button id="decode-btn" class="toggle-btn">Decode</button>
+            </div>
+
+            <label for="base64-input">Input Text</label>
+
+            <textarea
+                id="base64-input"
+                placeholder="Enter text..."
+            ></textarea>
+
+            <button id="convert-btn">
+                Convert
+            </button>
+
+            <p id="base64-warning"></p>
+
+            <textarea
+                id="base64-output"
+                class="mono"
+                readonly
+                placeholder="Result will appear here"
+            ></textarea>
+
+            <button id="copy-btn">
+                Copy Result
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/base64-tool.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Headers Analyzer | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="web-security.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Security Headers Analyzer</h2>
+        <p>Check response headers against common best practices.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <label for="headers-input">HTTP Response Headers</label>
+
+            <textarea
+                id="headers-input"
+                placeholder="Paste raw response headers, one per line..."
+            ></textarea>
+
+            <button id="analyze-btn">
+                Analyze Headers
+            </button>
+
+            <ul id="header-checks" class="check-list"></ul>
+
+            <ul id="warnings"></ul>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/security-headers.js"></script>
+
+</body>
+</html>

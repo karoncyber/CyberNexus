@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Analyzer | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="web-security.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Cookie Analyzer</h2>
+        <p>Inspect a Set-Cookie header for security attributes.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <label for="cookie-input">Set-Cookie Header</label>
+
+            <input
+                type="text"
+                id="cookie-input"
+                placeholder="e.g. session=abc123; Path=/; HttpOnly; Secure"
+            >
+
+            <button id="analyze-btn">
+                Analyze Cookie
+            </button>
+
+            <ul id="cookie-checks" class="check-list"></ul>
+
+            <ul id="warnings"></ul>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/cookie-analyzer.js"></script>
+
+</body>
+</html>

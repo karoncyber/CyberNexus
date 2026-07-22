@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Generator | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="password-tools.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Hash Generator</h2>
+        <p>Generate cryptographic hashes from text.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <label for="hash-input">
+                Text To Hash
+            </label>
+
+            <textarea
+                id="hash-input"
+                placeholder="Enter text..."
+            ></textarea>
+
+            <label for="algorithm">
+                Algorithm
+            </label>
+
+            <select id="algorithm">
+                <option value="SHA-256">
+                    SHA-256
+                </option>
+
+                <option value="SHA-512">
+                    SHA-512
+                </option>
+
+                <option value="SHA-1">
+                    SHA-1
+                </option>
+            </select>
+
+            <p id="algorithm-warning"></p>
+
+            <button id="generate-btn">
+                Generate Hash
+            </button>
+
+            <textarea
+                id="hash-output"
+                readonly
+                placeholder="Hash will appear here"
+            ></textarea>
+
+            <button id="copy-btn">
+                Copy Hash
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/hash-generator.js"></script>
+
+</body>
+</html>

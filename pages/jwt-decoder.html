@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Decoder | CyberNexus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+<header>
+    <nav>
+        <div class="logo">
+            <span>CyberNexus</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="encoding-tools.html">Back</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>JWT Decoder</h2>
+        <p>Decode the header and payload of a JWT.</p>
+    </section>
+
+    <section class="tool-container">
+
+        <div class="tool-card">
+
+            <label for="jwt-input">JWT Token</label>
+
+            <textarea
+                id="jwt-input"
+                placeholder="Paste a JWT token..."
+            ></textarea>
+
+            <button id="decode-btn">
+                Decode Token
+            </button>
+
+            <p id="jwt-warning"></p>
+
+            <label>Header</label>
+
+            <textarea
+                id="jwt-header"
+                class="mono"
+                readonly
+            ></textarea>
+
+            <label>Payload</label>
+
+            <textarea
+                id="jwt-payload"
+                class="mono"
+                readonly
+            ></textarea>
+
+            <p id="jwt-expiry"></p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/background.js"></script>
+
+<script src="../js/jwt-decoder.js"></script>
+
+</body>
+</html>
