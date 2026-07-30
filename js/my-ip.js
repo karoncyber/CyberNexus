@@ -14,7 +14,7 @@ lookupBtn.addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("https://api.ipify.org?format=json");
+        const response = await fetch("/api/my-ip");
         const data = await response.json();
 
         ipOutput.value = data.ip;
