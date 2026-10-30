@@ -2,9 +2,6 @@
 
 A collection of lightweight, browser based cybersecurity tools for developers, students, and security enthusiasts. No frameworks, no build step, no backend everything runs client-side in vanilla HTML, CSS, and JavaScript, so nothing you type ever leaves your browser.
 
-## Live Demo
-
-Enable GitHub Pages for this repo (Settings → Pages → Deploy from branch → `main` / `root`) and it will be served directly, since `index.html` sits at the project root.
 
 ## Tools
 
